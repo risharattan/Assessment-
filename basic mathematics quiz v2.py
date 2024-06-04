@@ -148,9 +148,9 @@ for question_number in range(1, num_questions + 1):
     # Game loop ends here
 
 # Displays game history if user wants to see it
-show_history = yes_no("Do you want to see the game history?")
+show_history = yes_no("Do you want to see the quiz history?")
 if show_history == "yes":
-    print("\n⏳⏳⏳ Game History⏳⏳⏳")
+    print("\n⏳⏳⏳ Quiz History⏳⏳⏳")
 
     for item in game_history:
         print(item)
@@ -162,7 +162,7 @@ if show_history == "yes":
 
 user_stats = point
 
-print("⚙️⚙️⚙️ Game Statistics ⚙️⚙️⚙️ ")
+print("⚙️⚙️⚙️ Quiz Statistics ⚙️⚙️⚙️ ")
 print(f"User     - Lowest Score: {user_stats}\t "
       f"Highest Score: {user_stats}\t "
       f"Average scores: {user_stats:.2f}")
