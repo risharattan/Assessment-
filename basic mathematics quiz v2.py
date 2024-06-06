@@ -98,10 +98,10 @@ for question_number in range(1, num_questions + 1):
     user_answer = ask_questions(num1, num2, operation)
     # Show quiz results
     if check_answer(num1, num2, operation, user_answer):
-        print("Correct!")
+        print("👍 You got it correct! 👍")
         user_point += 1
     else:
-        print("Incorrect! The correct answer was", end=" ")
+        print("You got it wrong! The correct answer was", end=" ")
         if operation == '/':
             print(f"{num1} / {num2} = {round(num1 / num2, 2)}")
         else:
